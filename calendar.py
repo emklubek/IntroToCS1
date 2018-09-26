@@ -2,4 +2,8 @@
 #9-26-2018
 
 #Greeting
-print("
+print("Welcome to the Calendar program.")
+
+#User Input
+
+#
