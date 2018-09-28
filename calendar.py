@@ -69,3 +69,5 @@ else:
     days = 0
 
 #Print and Format results
+print((format(month, ' >20')), (format(year, ' <20')))
+print(
