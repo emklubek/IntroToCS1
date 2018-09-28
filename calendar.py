@@ -75,4 +75,4 @@ counter = 1
 if days = 31:
   while value == 1:
     while counter <= 31:
-      print(counter \tcounter+1 \tcounter+1
+      print(counter \t counter+1 \t counter+1
