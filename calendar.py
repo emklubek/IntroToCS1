@@ -74,5 +74,5 @@ print("Sunday \t Monday \t Tuesday \t Wednesday \t Thursday \t Friday \t Saturda
 counter = 1
 if days = 31:
   while value == 1:
-    while counter <= 
-    
+    while counter <= 31:
+      print(counter \tcounter+1 \tcounter+1
