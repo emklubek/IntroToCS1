@@ -69,5 +69,10 @@ else:
     days = 0
 
 #Print and Format results
-print((format(month, ' >20')), (format(year, ' <20')))
-print(
+print((format(month, ' >50')), (format(year, ' <50')))
+print("Sunday \t Monday \t Tuesday \t Wednesday \t Thursday \t Friday \t Saturday")
+counter = 1
+if days = 31:
+  while value == 1:
+    while counter <= 
+    
