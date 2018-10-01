@@ -61,26 +61,42 @@ counter = 1
 if days = 31:
   if value == 1:
     while counter <= 31:
-      print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
-      counter = counter + 7
+      if counter == 29:
+        print(counter, "\t", counter+1, "\t", counter+2)
+        counter = counter + 7
+      else:
+        print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
+        counter = counter + 7
   elif value == 2:
     print("\t", counter,"\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5)
     counter = counter + 6
     while counter <= 31:
-      print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
-      counter = counter + 7
+      if counter == 28:
+        print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3)
+        counter = counter+7
+      else:
+        print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
+        counter = counter + 7
   elif value == 3:
     print("\t\t", counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4)
     counter = counter +5
     while counter <= 31:
-      print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
-      counter = counter + 7
+      if counter == 27:
+        print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4)
+        counter = counter + 7
+      else:
+        print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
+        counter = counter + 7
   elif value == 4:
     print("\t\t\t", counter, "\t", counter+1, "\t", counter+2, "\t", counter+3)
     counter = counter + 4
     while counter <= 31:
-      print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
-      counter = counter + 7
+      if counter == 26:
+        print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5)
+        counter = counter + 7
+      else:
+        print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
+        counter = counter + 7
   elif value == 5:
     print("\t\t\t\t", counter, "\t", counter+1, "\t", counter+2)
     counter = counter + 3
@@ -91,11 +107,19 @@ if days = 31:
     print("\t\t\t\t\t", counter, "\t", counter+1)
     counter = counter + 2
     while counter <= 31:
-      print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
-      counter = counter + 7
+      if counter == 31:
+        print(counter)
+        counter = counter + 7
+      else:
+        print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
+        counter = counter + 7
   elif value == 0:
     print("\t\t\t\t\t\t", counter)
     counter = counter + 1
     while counter <= 31:
-      print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
-      counter = counter + 7
+      if counter == 30:
+        print(counter, "\t", counter+1)
+        counter = counter + 7
+      else:
+        print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
+        counter = counter + 7
