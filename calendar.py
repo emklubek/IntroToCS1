@@ -58,7 +58,7 @@ value = (value + day)%7
 print((format(month, ' >50')), (format(year, ' <50')))
 print("Sun \t Mon \t Tue \t Wed \t Thu \t Fri \t Sat")
 counter = 1
-if days = 31:
+if days == 31:
   if value == 1:
     while counter <= 31:
       if counter == 29:
