@@ -5,8 +5,8 @@
 print("Welcome to the Calendar program.")
 
 #User Input
-month = 
-year = 
+month = input("Please enter a month. (Format like January, February, March, etc.)")
+year = input(float("Please enter a year between 1800 and 2099."))
 
 #Determine Days of Week
 century_digits = format(year/100, '.0f')
