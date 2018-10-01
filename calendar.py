@@ -54,24 +54,9 @@ elif month == 'September' or month == 'December':
   
 value = (value + day)%7
 
-if value == 1:
-  weekday = Sunday
-if value == 2:
-  weekday = Monday
-if value == 3:
-  weekday = Tuesday
-if value == 4:
-  weekday = Wednesday
-if value == 5:
-  weekday = Thursday
-if value == 6:
-  weekday = Friday
-if value == 0:
-  weekday = Saturday
-
 #Print and Format results
 print((format(month, ' >50')), (format(year, ' <50')))
-print("Sunday \t Monday \t Tuesday \t Wednesday \t Thursday \t Friday \t Saturday")
+print("Sun \t Mon \t Tue \t Wed \t Thu \t Fri \t Sat")
 counter = 1
 if days = 31:
   if value == 1:
@@ -79,8 +64,8 @@ if days = 31:
       print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
       counter = counter + 7
   elif value == 2:
-     print("\t", counter,"\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5)
-     counter = counter + 6
+    print("\t", counter,"\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5)
+    counter = counter + 6
     while counter <= 31:
       print(counter, "\t", counter+1, "\t", counter+2, "\t", counter+3, "\t", counter+4, "\t", counter+5, "\t", counter+6)
       counter = counter + 7
