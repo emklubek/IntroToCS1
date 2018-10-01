@@ -6,7 +6,21 @@ print("Welcome to the Calendar program.")
 
 #User Input
 month = input("Please enter a month. (Format like January, February, March, etc.)")
-year = input(float("Please enter a year between 1800 and 2099."))
+year = float(input("Please enter a year between 1800 and 2099."))
+
+#Determine Days in Month
+if month in('January', 'March', 'May', 'July', 'August', 'October', 'December'):
+    days = 31
+elif month in('April', 'June', 'September', 'November'):
+    days = 30
+elif month == 'February':
+    if year%4==0:
+        days = 29
+    else:
+        days = 28
+else:
+    print("Error: The month you entered is not in correct format.")
+    days = 0
 
 #Determine Days of Week
 century_digits = format(year/100, '.0f')
@@ -54,20 +68,6 @@ if value == 6:
   weekday = Friday
 if value == 0:
   weekday = Saturday
-  
-#Determine Days in Month
-if month in('January', 'March', 'May', 'July', 'August', 'October', 'December'):
-    days = 31
-elif month in('April', 'June', 'September', 'November'):
-    days = 30
-elif month == 'February':
-    if year%4==0:
-        days = 29
-    else:
-        days = 28
-else:
-    print("Error: The month you entered is not in correct format.")
-    days = 0
 
 #Print and Format results
 print((format(month, ' >50')), (format(year, ' <50')))
