@@ -25,7 +25,7 @@ else:
 #Determine Days of Week
 century_digits = format(year/100, '.0f')
 year_digits = year%100
-value = year_digits+floor(year_digits/4)
+value = year_digits+(year_digits//4)
 
 if century_digits == 18:
   value = value + 2
@@ -52,7 +52,7 @@ elif month == 'October':
 elif month == 'September' or month == 'December':
   value = value + 6
   
-value = (value + day)mod 7
+value = (value + day)%7
 
 if value == 1:
   weekday = Sunday
