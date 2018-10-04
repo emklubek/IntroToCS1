@@ -31,6 +31,7 @@ if century_digits == 18:
   value = value + 2
 elif century_digits == 20:
   value = value + 6
+
 if month == 'January' and not (year%4==0):
   value = value + 1
 elif month == 'February' and (year%4==0):
