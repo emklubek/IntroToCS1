@@ -35,8 +35,8 @@ if month == 'January' and not (year%4==0):
   value = value + 1
 elif month == 'February' and (year%4==0):
   value = value + 3
-  if month == 'February' and not (year%4==0):
-    value = value + 4
+elif month == 'February' and not (year%4==0):
+  value = value + 4
 elif month == 'March' or month == 'November':
   value = value + 4
 elif month == 'April' or month == 'July':
