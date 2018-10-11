@@ -1,2 +1,5 @@
 #Treasure Hunt Game 
 #10-11-2018
+
+#Greeting
+print("Welcome to the Treasure Hunt Game. \nAre you ready to hunt for some treasure?")
