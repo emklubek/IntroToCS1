@@ -8,4 +8,9 @@ if start in (Yes, yes, yeah, Yeah, ya, Ya):
 else:
   print("That's to bad because you're going to find the treasure anyway.")
 
-#
+#Random things to come later on in the program
+difficulty = input("What difficulty do you want to play on? (easy, medium, or hard)")
+
+#for easy
+turn = 3
+while turn > 0:
