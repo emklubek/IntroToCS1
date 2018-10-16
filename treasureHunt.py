@@ -1,6 +1,8 @@
 #Treasure Hunt Game 
 #10-11-2018
 
+import random
+
 def main():
   difficulty = input("What difficulty do you want to play on? (easy, medium, or hard)")
   if difficulty == 'easy':
@@ -14,15 +16,29 @@ def main():
 
 def easy():
   turn = 7
+  grid = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+  treasures = [' ', ' ', ' ', ' ', ' ']
+  for i in range(1,5):
+    random_num = random.randint(1,9)
+  treasures.i
+  
   while turn >= 0:
+    
+    turn = turn - 1
     
 def medium():
   turn = 9
+  grid = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+  treasures = [' ', ' ', ' ', ' ', ' ']
   while turn >= 0:
+    
   
 def hard(): 
   turn = 11
+  grid = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+  treasures = [' ', ' ', ' ', ' ', ' ']
   while turn >= 0:
+    
 
 #Greeting with a little bit of piracy
 start = input("Welcome to the Treasure Hunt Game. \nAre you ready to hunt for some treasure?")
