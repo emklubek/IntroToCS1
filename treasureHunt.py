@@ -27,9 +27,10 @@ def easy():
     print(grid)
     guess = input("Where do ye want t' dig fer treasure? (Enter a number between 1 and 9)")
     if guess in treasures:
-      print("Thank ye for finding me treasure!")
+      print("Thank ye for finding a treasure! Can ye find th' rest?")
     elif:
       print("Me treasure ain't there matey! Try Again.")
+    print("You have", turn, "turns left")
     turn = turn - 1
     
 
