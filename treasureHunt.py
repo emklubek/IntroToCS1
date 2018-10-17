@@ -17,14 +17,16 @@ def main():
 
 def easy():
   turn = 7
-  grid = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+  grid = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
   treasures = [' ', ' ', ' ', ' ', ' ']
   for i in range(1,5):
     random_num = random.randint(1,9)
   treasures.i
   
   while turn >= 0:
-    print(grid)
+    print(grid[0])
+    print(grid[1])
+    print(grid[2])
     guess = input("Where do ye want t' dig fer treasure? (Enter a number between 1 and 9)")
     if guess in treasures:
       print("Thank ye for finding a treasure! Can ye find th' rest?")
