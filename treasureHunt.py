@@ -277,3 +277,10 @@ else:
   
   #executing program with call of main
 main()
+
+#asking if user wasnts to play again
+again = input("Do you want to play again? (yes or no)")
+if again == 'yes':
+    main()
+elif again == 'no':
+    print('Thanks for playing!')
